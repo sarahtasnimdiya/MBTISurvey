@@ -6,8 +6,7 @@ This project aims to support the collection of structured MBTI personality data 
 
 ## Live Demo
 
-[Visit the Website](https://your-deployment-url.com)  
-*(Replace the URL above with the actual deployed site)*
+[Visit the Website](https://mbti-research.web.app/)  
 
 ## Features
 
