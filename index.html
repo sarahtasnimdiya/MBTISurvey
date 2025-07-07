@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBTI Personality Research</title>
+  <link rel="icon" type="image/png" href="assets/puzzle.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <img src="assets/puzzle.png" alt="MBTI Icon" class="header-icon" />
+    <div class="header-text">
+      <h1>MBTI Personality Research</h1>
+      <p>Help us collect data for academic research</p>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <form id="mbtiForm">
+      <label for="name">Your Name (or ID)</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="10" max="99" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="education">Education</label>
+      <select id="education" name="education" required>
+        <option value="">Select</option>
+        <option value="1">Graduate or higher</option>
+        <option value="0">Undergraduate / High School / Uneducated</option>
+      </select>
+
+     <label for="interest">Primary Area of Interest</label>
+      <select id="interest" name="interest" required>
+        <option value="">Select</option>
+        <option value="4">Arts</option>
+        <option value="3">Technology</option>
+        <option value="1">Sports</option>
+        <option value="2">Others</option>
+        <option value="0">Unknown</option>
+      </select>
+
+      <p style="margin-top: 1rem;">
+        <a href="https://www.16personalities.com/free-personality-test" target="_blank" rel="noopener noreferrer">
+            <button type="button">Take the MBTI Test</button>
+        </a>
+      </p>
+      <label for="mbtiLink">Paste Your 16Personalities Result Link</label>
+      <input type="url" id="mbtiLink" name="mbtiLink" required />
+      <div class="note">It looks like: https://www.16personalities.com/profiles/xxxx-x/o/xxxxxx</div>
+
+      <label for="writingSample">Tell us something about yourself (optional)</label>
+      <textarea id="writingSample" name="writingSample"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Load script.js as a module (contains Firebase setup + form logic) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
